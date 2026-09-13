@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content'
+import Experience from '~/components/experience/Experience.astro'
+import Footer from '~/components/footer/Footer.astro'
+import Intro from '~/components/intro/Intro.astro'
+import Projects from '~/components/projects/Projects.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+
+const profile = (await getCollection('profile'))[0].data
+
+// Authoring order is oldest-first (chronological). A defensive sort by the
+// "YYYY-MM" start keeps the timeline correct even if the file is edited out
+// of order.
+const experiences = (await getCollection('experiences'))
+  .map((entry) => entry.data)
+  .sort((a, b) => a.start.localeCompare(b.start))
+
+const projects = (await getCollection('projects')).map((entry) => entry.data)
+---
+
+<BaseLayout
+  title="Varun — Software Engineer"
+  description="Varun is a software engineer. Explore his experience, projects, and get in touch."
+>
+  <div class="min-h-screen">
+    <main>
+      <Intro profile={profile} />
+      <Experience items={experiences} />
+      <Projects items={projects} />
+    </main>
+    <Footer profile={profile} />
+  </div>
+</BaseLayout>

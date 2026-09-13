@@ -1,0 +1,38 @@
+---
+import { formatMonthYear } from '~/lib/month-year'
+import type { Experience } from '~/content.config'
+
+interface Props {
+  item: Experience
+  alternate: boolean
+}
+
+const { item, alternate } = Astro.props
+
+const panelClass =
+  'ml-10 md:ml-0 md:w-1/2 ' + (alternate ? 'md:pr-14' : 'md:ml-auto md:pl-14')
+
+const start = formatMonthYear(item.start)
+const end = item.end ? formatMonthYear(item.end) : 'Present'
+const period = `${start} — ${end}`
+---
+
+<li class="relative pb-14">
+  <span
+    aria-hidden="true"
+    class="absolute -left-1 top-1 h-5 w-5 rounded-full border-4 border-canvas bg-black md:left-1/2 md:-translate-x-1/2"
+  />
+  <div class={panelClass}>
+    <img
+      src={item.logo}
+      alt={`${item.company} logo`}
+      width={64}
+      height={64}
+      class="h-12 w-12 rounded border-2 border-black bg-white p-1 md:h-14 md:w-14"
+    />
+    <h3 class="mt-3 text-xl font-bold">{item.company}</h3>
+    <p class="mt-0.5 font-medium">{item.position}</p>
+    <p class="mt-0.5 text-sm font-medium">{period}</p>
+    <p class="mt-3 leading-relaxed">{item.blurb}</p>
+  </div>
+</li>

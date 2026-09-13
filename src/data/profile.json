@@ -1,0 +1,12 @@
+{
+  "varun": {
+    "name": "Varun",
+    "title": "Software Engineer",
+    "bio": "Placeholder bio. Replace with a short introduction about yourself, what you do, and what you care about building.",
+    "photo": "/images/varun.svg",
+    "resumeHref": "/resume.pdf",
+    "github": "https://github.com/varun",
+    "linkedin": "https://www.linkedin.com/in/varun",
+    "email": "varun@example.com"
+  }
+}

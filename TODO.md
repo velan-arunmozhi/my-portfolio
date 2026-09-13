@@ -2,22 +2,23 @@
 
 The site is fully built and data-driven. Everything below is currently a
 placeholder so the layout can be verified. Replace each item and the site
-updates itself — no code changes required. Dates in `experiences.json` are
-"YYYY-MM"; `end: null` means "current".
+updates itself. Content is validated at build time by the Zod schemas in
+`src/content.config.ts` — a malformed JSON file fails `pnpm build`. Dates in
+`experiences.json` are "YYYY-MM"; `end: null` means "current".
 
-## Public/data (edit these)
+## Content (edit these — Astro content collections)
 
-1. `public/data/profile.json`
+1. `src/data/profile.json`
    - `name` (your name), `title` (headline), `bio` (short intro).
    - `photo` → path to your real photo (e.g. `/images/varun.jpg`).
    - `github`, `linkedin` → real profile URLs.
    - `email` → real contact address.
-2. `public/data/experiences.json`
+2. `src/data/experiences.json`
    - Replace the 3 placeholder entries with real roles (company, position,
      start/end, blurb, logo path). The timeline sorts oldest-first and the
      same order is used regardless of file order.
    - `logo` → real logo image paths (drop files in `public/images/`).
-3. `public/data/projects.json`
+3. `src/data/projects.json`
    - Replace the 3 placeholder projects (title, image, blurb, links).
    - `links` is optional; leave `"links": []` or omit it for no buttons.
 
@@ -30,14 +31,10 @@ updates itself — no code changes required. Dates in `experiences.json` are
    keeping the same filename (`/resume.pdf` in `profile.json`) or updating
    `resumeHref`.
 
-## Head metadata (edit `src/routes/__root.tsx`)
+## Head metadata (edit `src/layouts/BaseLayout.astro` + `src/pages/index.astro`)
 
 6. `<title>`, meta `description`, and the `og:*` tags use a placeholder
    domain (`https://varun.dev`). Update them once the site is deployed so
-   OpenGraph previews point at real content and assets.
+   OpenGraph previews point at real content and assets. The `site` option in
+   `astro.config.ts` is the same placeholder — update it too.
 7. (Optional) Replace `public/favicon.svg` with a personal favicon.
-
-## Site URL (edit `src/routes/__root.tsx` if needed)
-
-8. The OG image path is relative to `https://varun.dev` — update to the real
-   deployed origin.

@@ -1,0 +1,23 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+import type { Experience } from '~/content.config'
+
+interface Props {
+  items: Experience[]
+}
+
+const { items } = Astro.props
+---
+
+<section id="experience" class="mx-auto max-w-5xl px-6 py-16">
+  <h2 class="mb-14 text-center text-3xl font-bold">Experience</h2>
+  <ol class="relative mx-auto max-w-3xl">
+    <span
+      aria-hidden="true"
+      class="absolute bottom-0 left-1 top-0 w-1 bg-black md:left-1/2 md:-translate-x-1/2"
+    />
+    {items.map((item, index) => (
+      <ExperienceItem item={item} alternate={index % 2 === 0} />
+    ))}
+  </ol>
+</section>

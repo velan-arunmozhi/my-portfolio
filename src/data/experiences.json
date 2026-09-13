@@ -1,5 +1,6 @@
 [
   {
+    "id": "placeholder-co",
     "company": "Placeholder Co.",
     "position": "Junior Engineer",
     "start": "2020-06",
@@ -8,6 +9,7 @@
     "logo": "/images/logo-placeholder-a.svg"
   },
   {
+    "id": "placeholder-labs",
     "company": "Placeholder Labs",
     "position": "Software Engineer",
     "start": "2022-08",
@@ -16,6 +18,7 @@
     "logo": "/images/logo-placeholder-b.svg"
   },
   {
+    "id": "placeholder-systems",
     "company": "Placeholder Systems",
     "position": "Senior Software Engineer",
     "start": "2024-10",

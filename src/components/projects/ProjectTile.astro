@@ -1,0 +1,31 @@
+---
+import type { Project } from '~/content.config'
+
+interface Props {
+  project: Project
+}
+
+const { project } = Astro.props
+---
+
+<article class="flex flex-col border-4 border-black bg-white p-4">
+  <img
+    src={project.image}
+    alt={`Screenshot of ${project.title}`}
+    class="aspect-video w-full border-2 border-black object-cover"
+  />
+  <h3 class="mt-4 text-xl font-bold">{project.title}</h3>
+  <p class="mt-2 leading-relaxed">{project.blurb}</p>
+  {project.links && project.links.length > 0 ? (
+    <div class="mt-4 flex flex-wrap gap-2">
+      {project.links.map((link) => (
+        <a
+          href={link.href}
+          class="rounded border-2 border-black bg-canvas px-3 py-1.5 text-sm font-semibold"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  ) : null}
+</article>

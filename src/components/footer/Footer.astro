@@ -1,0 +1,49 @@
+---
+import type { ProfileData } from '~/content.config'
+
+interface Props {
+  profile: ProfileData
+}
+
+const { profile } = Astro.props
+---
+
+<!-- Deliberate deviation from the locked tokens (background #dbc1ac, black
+     text): the contact footer inverts to a black band with canvas text as an
+     intentional design choice. Flat colors still; no gradients/animations. -->
+<footer id="contact" class="bg-black px-6 py-14 text-canvas">
+  <div class="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
+    <h2 class="text-3xl font-bold">Get in touch</h2>
+    <p class="max-w-lg leading-relaxed">
+      Find me on GitHub and LinkedIn, or send an email. You can also grab a
+      copy of my resume.
+    </p>
+    <nav class="flex flex-wrap justify-center gap-3">
+      <a
+        href={profile.github}
+        class="rounded border-2 border-canvas px-4 py-2 font-semibold"
+      >
+        GitHub
+      </a>
+      <a
+        href={profile.linkedin}
+        class="rounded border-2 border-canvas px-4 py-2 font-semibold"
+      >
+        LinkedIn
+      </a>
+      <a
+        href={`mailto:${profile.email}`}
+        class="rounded border-2 border-canvas px-4 py-2 font-semibold"
+      >
+        Email
+      </a>
+      <a
+        href={profile.resumeHref}
+        download
+        class="rounded border-2 border-canvas bg-canvas px-4 py-2 font-semibold text-black"
+      >
+        Resume
+      </a>
+    </nav>
+  </div>
+</footer>
