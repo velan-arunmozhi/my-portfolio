@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <rect width="320" height="320" fill="#9ca3af"/>
+  <circle cx="160" cy="120" r="52" fill="#dbc1ac"/>
+  <path d="M160 200c-52 0-84 28-84 60h168c0-32-32-60-84-60z" fill="#dbc1ac"/>
+  <text x="160" y="292" text-anchor="middle" font-family="Jost, sans-serif" font-size="22" font-weight="600" fill="#111827">photo placeholder</text>
+</svg>

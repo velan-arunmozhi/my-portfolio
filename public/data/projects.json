@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Placeholder Project One",
+    "image": "/images/project-one.svg",
+    "blurb": "Placeholder blurb. Summarize what the project does, the problem it solves, and the stack used.",
+    "links": [
+      { "label": "Live", "href": "https://example.com" },
+      { "label": "Source", "href": "https://github.com/varun/example" }
+    ]
+  },
+  {
+    "title": "Placeholder Project Two",
+    "image": "/images/project-two.svg",
+    "blurb": "Placeholder blurb. Summarize what the project does, the problem it solves, and the stack used.",
+    "links": [
+      { "label": "Live", "href": "https://example.com" }
+    ]
+  },
+  {
+    "title": "Placeholder Project Three",
+    "image": "/images/project-three.svg",
+    "blurb": "Placeholder blurb. Summarize what the project does, the problem it solves, and the stack used.",
+    "links": []
+  }
+]

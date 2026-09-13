@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(['dist', '.output', 'src/routeTree.gen.ts']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -17,6 +17,14 @@ export default defineConfig([
     ],
     languageOptions: {
       globals: globals.browser,
+    },
+  },
+  {
+    // TanStack Router route files export the `Route` object (and Start's
+    // router.tsx exports getRouter) alongside components defined for HMR.
+    files: ['src/routes/**/*.{ts,tsx}', 'src/router.tsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
     },
   },
 ])

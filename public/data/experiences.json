@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Placeholder Co.",
+    "position": "Junior Engineer",
+    "start": "2020-06",
+    "end": "2022-07",
+    "blurb": "Placeholder blurb. Describe what you built, owned, or shipped here.",
+    "logo": "/images/logo-placeholder-a.svg"
+  },
+  {
+    "company": "Placeholder Labs",
+    "position": "Software Engineer",
+    "start": "2022-08",
+    "end": "2024-09",
+    "blurb": "Placeholder blurb. Describe what you built, owned, or shipped here.",
+    "logo": "/images/logo-placeholder-b.svg"
+  },
+  {
+    "company": "Placeholder Systems",
+    "position": "Senior Software Engineer",
+    "start": "2024-10",
+    "end": null,
+    "blurb": "Placeholder blurb. Describe what you built, owned, or shipped here.",
+    "logo": "/images/logo-placeholder-c.svg"
+  }
+]
