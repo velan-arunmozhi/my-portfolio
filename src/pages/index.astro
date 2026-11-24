@@ -8,19 +8,22 @@ import BaseLayout from '~/layouts/BaseLayout.astro'
 
 const profile = (await getCollection('profile'))[0].data
 
-// Authoring order is oldest-first (chronological). A defensive sort by the
-// "YYYY-MM" start keeps the timeline correct even if the file is edited out
-// of order.
+// Newest first: current roles (end: null) lead, then by most recent end date,
+// with start date as the tie-breaker. Independent of authoring order.
 const experiences = (await getCollection('experiences'))
   .map((entry) => entry.data)
-  .sort((a, b) => a.start.localeCompare(b.start))
+  .sort(
+    (a, b) =>
+      (b.end ?? '9999-99').localeCompare(a.end ?? '9999-99') ||
+      b.start.localeCompare(a.start),
+  )
 
 const projects = (await getCollection('projects')).map((entry) => entry.data)
 ---
 
 <BaseLayout
-  title="Varun — Software Engineer"
-  description="Varun is a software engineer. Explore his experience, projects, and get in touch."
+  title="Velan Arunmozhi"
+  description="Velan Arunmozhi is a CS + Math student @ Purdue University. Explore his experience, projects, and get in touch!"
 >
   <div class="min-h-screen">
     <main>

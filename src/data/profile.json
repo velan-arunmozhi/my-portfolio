@@ -1,12 +1,11 @@
 {
   "varun": {
-    "name": "Varun",
+    "name": "Velan Arunmozhi",
     "title": "Software Engineer",
-    "bio": "Placeholder bio. Replace with a short introduction about yourself, what you do, and what you care about building.",
-    "photo": "/images/varun.svg",
-    "resumeHref": "/resume.pdf",
-    "github": "https://github.com/varun",
-    "linkedin": "https://www.linkedin.com/in/varun",
-    "email": "varun@example.com"
+    "bio": "Hello! I'm Velan Arunmozhi. I'm studying CS and Math at Purdue University, interested in the intersection of research and engineering. Besides coding, I enjoy reading, cooking, and playing basketball.",
+    "photo": "/images/profile.jpg",
+    "github": "https://github.com/velan-arunmozhi",
+    "linkedin": "https://www.linkedin.com/in/velan-arunmozhi/",
+    "email": "velanarunmozhi33@gmail.com"
   }
 }

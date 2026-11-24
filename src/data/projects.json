@@ -1,28 +1,30 @@
 [
   {
-    "id": "project-one",
-    "title": "Placeholder Project One",
-    "image": "/images/project-one.svg",
-    "blurb": "Placeholder blurb. Summarize what the project does, the problem it solves, and the stack used.",
+    "id": "domain-time",
+    "title": "Domain Time",
+    "image": "/images/domain-time.png",
+    "blurb": "Chrome extension to help manage your screen time on websites.",
     "links": [
-      { "label": "Live", "href": "https://example.com" },
-      { "label": "Source", "href": "https://github.com/varun/example" }
+      { "label": "Chrome Web Store", "href": "https://chromewebstore.google.com/detail/domain-time/mfiipbndijhigohkmmapoaieehdkoiob" }
     ]
   },
   {
-    "id": "project-two",
-    "title": "Placeholder Project Two",
-    "image": "/images/project-two.svg",
-    "blurb": "Placeholder blurb. Summarize what the project does, the problem it solves, and the stack used.",
+    "id": "nba-playoff-predictor",
+    "title": "2026 NBA Playoff Predictor",
+    "image": "/images/nba-playoffs.webp",
+    "blurb": "An XGBoost-based model to predict the 2026 NBA playoffs based on historical data and team performance metrics from the regular season.",
     "links": [
-      { "label": "Live", "href": "https://example.com" }
+      { "label": "GitHub", "href": "https://github.com/velan-arunmozhi/predicting-nba-playoffs" }
     ]
   },
   {
-    "id": "project-three",
-    "title": "Placeholder Project Three",
-    "image": "/images/project-three.svg",
-    "blurb": "Placeholder blurb. Summarize what the project does, the problem it solves, and the stack used.",
-    "links": []
+    "id": "trippian",
+    "title": "Trippian",
+    "image": "/images/trippian.png",
+    "blurb": "An AI-powered travel planning assistant that uses agents to create personalized itineraries. Built at Catapult Hacks 2025.",
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/LeoSesuraj/catapult" },
+      { "label": "Devpost", "href": "https://devpost.com/software/trippian?ref_content=my-projects-tab&ref_feature=my_projects" }
+    ]
   }
 ]

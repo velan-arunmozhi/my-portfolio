@@ -1,29 +1,38 @@
 [
   {
-    "id": "placeholder-co",
-    "company": "Placeholder Co.",
-    "position": "Junior Engineer",
-    "start": "2020-06",
-    "end": "2022-07",
-    "blurb": "Placeholder blurb. Describe what you built, owned, or shipped here.",
-    "logo": "/images/logo-placeholder-a.svg"
-  },
-  {
-    "id": "placeholder-labs",
-    "company": "Placeholder Labs",
-    "position": "Software Engineer",
-    "start": "2022-08",
-    "end": "2024-09",
-    "blurb": "Placeholder blurb. Describe what you built, owned, or shipped here.",
-    "logo": "/images/logo-placeholder-b.svg"
-  },
-  {
-    "id": "placeholder-systems",
-    "company": "Placeholder Systems",
-    "position": "Senior Software Engineer",
-    "start": "2024-10",
+    "id": "boilerexams",
+    "company": "Boilerexams",
+    "position": "Software Developer",
+    "start": "2025-11",
     "end": null,
-    "blurb": "Placeholder blurb. Describe what you built, owned, or shipped here.",
-    "logo": "/images/logo-placeholder-c.svg"
+    "blurb": "Maintain boilerexams.com and boilerclasses.com",
+    "logo": "/images/boilerexams.jpg"
+  },
+  {
+    "id": "purdue-envision-center",
+    "company": "Purdue Envision Center",
+    "position": "Full Stack Developer",
+    "start": "2025-06",
+    "end": null,
+    "blurb": "Build, maintain, and deploy the Envision Center's web applications",
+    "logo": "/images/ec.png"
+  },
+  {
+    "id": "michelin",
+    "company": "Michelin",
+    "position": "Digital Solutions Engineer Intern",
+    "start": "2026-05",
+    "end": "2026-08",
+    "blurb": "Digitalized and automated the plant's QA processes",
+    "logo": "/images/michelin.jpg"
+  },
+  {
+    "id": "purdue-bme",
+    "company": "Purdue University Weldon School of Biomedical Engineering",
+    "position": "Undergraduate Research Fellow",
+    "start": "2025-01",
+    "end": "2025-05",
+    "blurb": "Optimized data efficiency in a deep learning neural network for 3D nuclei segmentation; First-Time Research (FTR) Fellowship",
+    "logo": "/images/purdue-bme.png"
   }
 ]

@@ -35,7 +35,6 @@ const profileSchema = z.object({
   title: z.string(),
   bio: z.string(),
   photo: z.string(),
-  resumeHref: z.string(),
   github: z.string(),
   linkedin: z.string(),
   email: z.string(),
