@@ -23,6 +23,7 @@ const { project } = Astro.props
       {project.links.map((link) => (
         <a
           href={link.href}
+          aria-label={`${link.label} - ${project.title}`}
           class="rounded border-2 border-black bg-canvas px-3 py-1.5 text-sm font-semibold"
         >
           {link.label}
