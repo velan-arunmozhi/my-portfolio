@@ -6,7 +6,7 @@
     "start": "2025-11",
     "end": null,
     "blurb": "Maintain boilerexams.com and boilerclasses.com",
-    "logo": "/images/boilerexams.jpg"
+    "logo": "/images/boilerexams.webp"
   },
   {
     "id": "purdue-envision-center",
@@ -15,7 +15,7 @@
     "start": "2025-06",
     "end": null,
     "blurb": "Build, maintain, and deploy the Envision Center's web applications",
-    "logo": "/images/ec.png"
+    "logo": "/images/ec.webp"
   },
   {
     "id": "michelin",
@@ -24,7 +24,7 @@
     "start": "2026-05",
     "end": "2026-08",
     "blurb": "Built internal tools and data pipelines that digitized QA workflows and modernized legacy data systems",
-    "logo": "/images/michelin.jpg"
+    "logo": "/images/michelin.webp"
   },
   {
     "id": "purdue-bme",
@@ -33,6 +33,6 @@
     "start": "2025-01",
     "end": "2025-05",
     "blurb": "Optimized data efficiency in a deep learning neural network for 3D nuclei segmentation; First-Time Research (FTR) Fellowship",
-    "logo": "/images/purdue-bme.png"
+    "logo": "/images/purdue-bme.webp"
   }
 ]

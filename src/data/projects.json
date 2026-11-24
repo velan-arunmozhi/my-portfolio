@@ -2,7 +2,7 @@
   {
     "id": "domain-time",
     "title": "Domain Time",
-    "image": "/images/domain-time.png",
+    "image": "/images/domain-time.webp",
     "blurb": "A Chrome extension to help manage your screen time on websites.",
     "links": [
       { "label": "Chrome Web Store", "href": "https://chromewebstore.google.com/detail/domain-time/mfiipbndijhigohkmmapoaieehdkoiob" }
@@ -20,7 +20,7 @@
   {
     "id": "trippian",
     "title": "Trippian",
-    "image": "/images/trippian.png",
+    "image": "/images/trippian.webp",
     "blurb": "An AI-powered travel planning assistant that uses agents to create personalized itineraries. Built at Catapult Hacks 2025.",
     "links": [
       { "label": "Devpost", "href": "https://devpost.com/software/trippian?ref_content=my-projects-tab&ref_feature=my_projects" },

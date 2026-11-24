@@ -12,6 +12,8 @@ const { project } = Astro.props
   <img
     src={project.image}
     alt={`Screenshot of ${project.title}`}
+    loading="lazy"
+    decoding="async"
     class="aspect-video w-full border-2 border-black object-cover"
   />
   <h3 class="mt-4 text-xl font-bold">{project.title}</h3>
